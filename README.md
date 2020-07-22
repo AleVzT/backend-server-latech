@@ -72,7 +72,13 @@ Una vez dentro de la carpeta principal debemos ejecutar desde la terminal el sig
 
     npm install
 
-Esto instalará todas las dependencias o paquetes de node necesarios para levantar el backend server. Una vez finalizada esta instalación, estamos listo para levantar el backend serve en modo desarrollo. Haciendo uso del comando 
+Esto instalará todas las dependencias o paquetes de node necesarios para levantar el backend server. Una vez finalizada esta instalación, estamos listo para levantar el backend serve en modo desarrollo. Para ello primero debemos compilar el codigo TypeScript a Javascript ingresando a la carpeta function desde nuestra consola de comandos y ejecutando el el comando
+
+```
+   npm run build 
+```
+
+Seguidamente levantar el backend server desde la raiz del proyecto haciendo uso del comando 
 
     firebase serve
 
@@ -80,7 +86,6 @@ Una vez ejecutado este comando y compilado el codigo puedes colocar en la barra 
 
     http://localhost:5000/firestore-latech/us-central1/api/usuarios
 
-Esto debería cargar un objeto con los datos del unico usuario existente en la base de datos, usuario administrador.
 
 ## NOTA:
 Debemos tener una cuenta en firebase y una firebase cloud creada con 3 colecciones: usuario, clases y subscritos. Ademas debemos añadir a la carpeta src el archivo .json con las keys para conectarnos al proyecto, este deber ser renombrado como 
